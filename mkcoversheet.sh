@@ -16,6 +16,6 @@ if [ ! -f $TEMPLATE ]; then
 	TEMPLATE="/usr/share/mkcoversheet/$TEMPLATE"
 fi
 
-sed "s/\[NUMBER\]/$NUMBER/;s/\[CODE\]/$CODE/;s/\[DATE\]/$DATE/;s/\[HOURS\]/$HOURS/;s/\[GROUP\]/$GROUP/" template.pdf > "$NUMBER.pdf"
+sed "s/\[NUMBER\]/$NUMBER/;s/\[CODE\]/$CODE/;s/\[DATE\]/$DATE/;s/\[HOURS\]/$HOURS/;s/\[GROUP\]/$GROUP/" $TEMPLATE > "$NUMBER.pdf"
 
 echo "$NUMBER.pdf generated successfully"
